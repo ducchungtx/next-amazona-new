@@ -8,3 +8,4 @@
 4. Publish to Github
 5. Create Website Layout
 6. List Products
+7. Create Product Details

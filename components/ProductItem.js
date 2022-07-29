@@ -5,7 +5,7 @@ import React from 'react';
 export default function ProductItem({ product }) {
   return (
     <div className="card">
-      <Link href={`/product/${product.id}`}>
+      <Link href={`/product/${product.slug}`}>
         <a>
           <img
             src={product.image}
