@@ -10,3 +10,7 @@
 6. List Products
 7. Create Product Details
 8. Handle Add To Cart
+9. Create Cart Page
+10. Update Quantity In The Cart
+11. Save Cart Items
+12. Create Login Form
