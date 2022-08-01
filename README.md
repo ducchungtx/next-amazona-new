@@ -18,3 +18,5 @@
 14. Create Login API
 15. Add User Menu
 16. Create Shipping Screen
+17. Create Payment Method Screen
+18. Seed sample products
