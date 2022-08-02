@@ -7,6 +7,8 @@ import dynamic from 'next/dynamic';
 
 import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 function CartScreen() {
   const { state, dispatch } = useContext(Store);
@@ -22,7 +24,12 @@ function CartScreen() {
 
   const updateCartHandler = async (item, qty) => {
     const quantity = Number(qty);
+    const { data } = await axios.get(`/api/products/${item._id}`);
+    if (data.countInStock < quantity) {
+      return toast.error('Sorry. Product is out of stock');
+    }
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
+    toast.success('Product updated in the cart');
   };
 
   return (
