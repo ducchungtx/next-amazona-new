@@ -20,3 +20,5 @@
 16. Create Shipping Screen
 17. Create Payment Method Screen
 18. Seed sample products
+19. Load Products MongoDB
+20. Create Place Order Screen
